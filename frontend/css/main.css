@@ -1,0 +1,44 @@
+body {
+    font-family: Helvetica, Arial;
+    font-size:12px;
+}
+h1 {
+    font-size:200%;
+}
+fieldset {
+    border:1px solid #ccc;
+    padding:10px;
+}
+legend {
+    padding:0 5px;
+    text-align:right;
+}
+fieldset > div {
+    margin:10px 0;
+}
+fieldset > legend + div {
+    margin-top:0;
+}
+fieldset > div:last-child {
+    margin-bottom:0;
+}
+label {
+    display:inline-block;
+    width:170px;
+}
+input {
+    width:200px;
+}
+input[type="submit"] {
+    width:auto;
+}
+.help {
+    display:none;
+    font-size:90%;
+}
+input:focus + .help {
+    display:inline-block;
+}
+div.submit {
+    margin-left:170px;
+}

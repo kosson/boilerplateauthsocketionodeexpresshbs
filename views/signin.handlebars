@@ -1,0 +1,64 @@
+<link rel="stylesheet" href="../../css/main.css" media="screen" title="no title" charset="utf-8">
+<link rel="stylesheet" href="../../libs/jquery-form-validator/form-validator/theme-default.min.css" media="screen" title="no title" charset="utf-8">
+
+<form action="" id="signinForm" onsubmit="return createUser()">
+  <div class="form-group">
+    <fieldset>
+        <legend>Creare cont</legend>
+        <div>
+          <label for="name">Nume:</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            value=""
+            aria-describedby="name-format"
+            required
+            aria-required=”true”
+            data-validation="length alphanumeric"
+            data-validation-length="min5"
+            data-validation-error-msg-required="Trebuie să pui un nume"
+            data-validation-error-msg-alphanumeric="Doar alfanumerice"
+  	        data-validation-error-msg="Să fie măcar de 5 caractere">
+          <span id="name-format" class="help">Un nume scurt</span>
+        </div>
+        <div>
+            <label for="email">Email</label>
+            <input type="text"
+                   id="email"
+                   name="email"
+                   value=""
+                   required aria-required="true"
+                   data-validation-error-msg="Nu-i un mail valid">
+            <span id="email-format" class="help">Introdu un email valid</span>
+        </div>
+        <div>
+            <label for="password">Password</label>
+            <input type="password"
+              id="password"
+              name="pass_confirmation"
+              data-validation="length"
+              data-validation-length="min8">
+        </div>
+        <div>
+            <label for="parolacheck">Verifică parola</label>
+            <input type="password"
+              id="parolacheck"
+              name="pass"
+              data-validation="confirmation">
+        </div>
+        <div class="submit">
+            <input type="submit" name="formSubmitSend" value="Fă cont">
+            <input type="reset" value="Resetează formularul">
+        </div>
+    </fieldset>
+  </div>
+</form>
+<div id="mesaje">
+  {{!-- <span id="mesaj"></span> --}}
+</div>
+<script src="../../libs/jquery/dist/jquery.min.js" charset="utf-8"></script>
+<script src="../../libs/jquery-form-validator/form-validator/jquery.form-validator.min.js" charset="utf-8"></script>
+<script src="../js/com.js" charset="utf-8"></script>
+<script src="../js/validateSignIn.js" charset="utf-8"></script>
+<script src="../js/createUser.js" charset="utf-8"></script>

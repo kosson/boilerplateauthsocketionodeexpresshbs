@@ -1,0 +1,27 @@
+{
+  "name": "socketauthboilerplate",
+  "description": "boilerplate de autentificare si lucru pe sockets",
+  "main": "app.js",
+  "authors": [
+    "Nicolaie Constantinescu"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "sockets",
+    "auth"
+  ],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "frontend/libs",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.1.0",
+    "jquery-form-validator": "^2.3.36"
+  }
+}
